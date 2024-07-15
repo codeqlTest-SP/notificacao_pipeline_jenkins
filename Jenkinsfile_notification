@@ -26,7 +26,8 @@ pipeline {
                 to: "jonathapentester@gmail.com"
             )
         }   
-    }    
+    }  
+}
     post {
         failure {
            emailext(
@@ -36,4 +37,3 @@ pipeline {
             )
         }   
     }
-} 
